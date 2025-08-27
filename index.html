@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pallabi Hasan Trade International</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔴 Top Red Bar -->
+  <div class="bg-danger text-white text-center py-2">
+    Supplying all kinds of medical equipment & healthcare products with nationwide delivery in Bangladesh.
+  </div>
+
+  <!-- 🔵 Top Nav: Logo (left) + Search (center) + Call (right) -->
+  <nav class="navbar navbar-expand-lg bg-light border-bottom py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Company Logo" height="40">
+      </a>
+
+      <!-- Search Box -->
+      <form class="d-flex mx-auto" style="width:50%;">
+        <input class="form-control me-2" type="search" placeholder="Search Products">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <!-- Call Button -->
+      <a href="8801896066483" class="btn btn-primary">📞 01896066483</a>
+
+    </div>
+  </nav>
+
+  <!-- 🔵 Blue Menu Bar -->
+  <nav class="navbar navbar-expand-lg" style="background:#003366;">
+    <div class="container">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown">
+            All Products
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Medical Equipment</a></li>
+            <li><a class="dropdown-item" href="#">Hospital Furniture</a></li>
+            <li><a class="dropdown-item" href="#">Diagnostics</a></li>
+            <li><a class="dropdown-item" href="#">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Integrated Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Request a Quote</a></li>
+        <li class="nav-item"><a id="contactBtn" class="nav-link text-white fw-bold" href="javascript:void(0)">Contact</a></li>
+        <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Feedback</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🟢 Hero Section -->
+  <section class="hero-banner text-white text-center d-flex align-items-center justify-content-center"
+    style="height:70vh; background:url('images/banner.jpg') center/cover no-repeat; position:relative;">
+    <div style="background:rgba(0,0,0,0.5); position:absolute; inset:0;"></div>
+    <div class="container position-relative">
+      <h1 class="display-4">স্বাগতম পল্লবী হাসান ট্রেড ইন্টারন্যাশনাল এ</h1>
+      <p class="lead">আমরা সকল ধরনের মেডিকেল ইকুয়েপমেন্ট ইম্পোর্ট এন্ড সাপ্লাই করে থাকি সারা দেশে</p>
+      <button id="showProductsBtn" class="btn btn-danger btn-lg mt-3">
+        আমাদের প্রোডাক্টগুলো দেখতে এখানে ক্লিক করুন
+      </button>
+    </div>
+  </section>
+
+  <!-- 🟡 Products Section -->
+  <section id="products" class="py-5" style="display:none;">
+    <div class="container">
+      <h2 class="text-center mb-4">আমাদের প্রোডাক্টসমূহ</h2>
+      <div class="row g-4">
+
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="images/product1.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <h5 class="card-title">Digital Blood Pressure Machine</h5>
+              <div class="product-details">
+                <p class="fw-bold">Price: 2,500৳</p>
+                <p>এই মেশিন দিয়ে রক্তচাপ মাপা যায় সহজে, এটি অটোমেটিক ও একুরেট।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="images/product2.jpg" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <h5 class="card-title">Oxygen Cylinder</h5>
+              <div class="product-details">
+                <p class="fw-bold">Price: 9,500৳</p>
+                <p>হালকা ও সহজে ব্যবহারযোগ্য অক্সিজেন সিলিন্ডার, বাসা ও হাসপাতালে উপযোগী।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img src="images/product3.jpg" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <h5 class="card-title">Wheelchair</h5>
+              <div class="product-details">
+                <p class="fw-bold">Price: 7,000৳</p>
+                <p>মজবুত ও ভাঁজ করা যায় এমন হুইলচেয়ার, রোগীর চলাচলের জন্য সুবিধাজনক।</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📌 Contact Popup -->
+  <div id="contactPopup" class="contact-popup">
+    <div class="popup-content">
+      <button class="close-btn">&times;</button>
+      <h4 class="mb-3">📞 Contact Information</h4>
+      <p><span>🗺️</span> 33 Topkhana Road Meherba Plaza Purana Paltan, Dhaka, Bangladesh</p>
+      <p><span>📞</span> <a href="8801887125540" class="btn btn-success mt-2">01887125540</a></p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    // Show products on button click
+    document.getElementById("showProductsBtn").addEventListener("click", () => {
+      let products = document.getElementById("products");
+      products.style.display = "block";
+      products.scrollIntoView({ behavior: "smooth" });
+    });
+
+    // Toggle product details on card click
+    document.querySelectorAll(".product-card").forEach(card => {
+      card.addEventListener("click", () => {
+        let details = card.querySelector(".product-details");
+        details.classList.toggle("show");
+      });
+    });
+
+    // Contact popup
+    const contactBtn = document.getElementById("contactBtn");
+    const contactPopup = document.getElementById("contactPopup");
+    const closeBtn = document.querySelector(".contact-popup .close-btn");
+
+    contactBtn.addEventListener("click", () => {
+      contactPopup.style.display = "flex";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      contactPopup.style.display = "none";
+    });
+
+    contactPopup.addEventListener("click", (e) => {
+      if (e.target === contactPopup) {
+        contactPopup.style.display = "none";
+      }
+    });
+  </script>
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Company Info -->
+    <div class="footer-section">
+      <h4>Pallabi Hasan Trade International</h4>
+      <p>All Type Of Medical Equipments Importer & Supplier.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">All Products</a></li>
+        <li><a href="#quote">Request a Quote</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>📍 33, Topkhana Road Meherba Plaza, Purana Paltan Dhaka</p>
+      <p>📞 +8801887-125540</p>
+      <p>📞 +8801896066483</p>
+      <p>✉️ pallabihasan.ti@gmail.com</p>
+    </div>
+
+    <!-- Follow Us -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://facebook.com/profile.php?id=100086600441018" target="_blank"> <img src="images/facebook.png" alt="Facebook"> </a>
+        <a href="https://instagram.com/YourPage" target="_blank"> <img src="images/instagram.png" alt="Instagram"> </a>
+        <a href="https://twitter.com/YourPage" target="_blank"> <img src="images/twitter.png" alt="Twitter"> </a>
+        <a href="https://youtube.com/@PallabiHasanTradeInternational" target="_blank"> <img src="images/youtube.png" alt="YouTube"> </a>
+        <a href="https://wa.me/8801887125540" target="_blank"> <img src="images/whatsapp.png" alt="WhatsApp"> </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Pallabi Hasan Trade International | All Rights Reserved</p>
+  </div>
+</footer>
